@@ -1,0 +1,26 @@
+<!doctype html>
+<meta name=viewport content=width=device-width>
+<link rel=stylesheet href=index.css>
+
+<h1> Installing DappHub&rsquo;s developer tools for Ethereum </h1>
+
+<p> Use the following commands to install the suite of Ethereum
+developer tools currently recommended by DappHub:
+
+<pre>
+<b># Install the <a href=https://nixos.org>Nix package manager</a>:</b>
+curl https://nixos.org/nix/install | sh
+<b># Add the <!--
+--><a href=https://github.com/dapphub/nixpkgs>DappHub channel</a> to Nix (optional):</b>
+nix-channel --add https://nix.dapphub.com/pkgs/dapphub
+nix-channel --update
+<b># Install the various developer tools:</b>
+nix-env -i <!--
+--><a href=https://github.com/dapphub/dapp>dapp</a> <!--
+--><a href=https://github.com/dapphub/hsevm>hsevm</a> <!--
+--><a href=https://github.com/dapphub/seth>seth</a> <!--
+--><a href=https://github.com/ethereum/solidity>solc</a>
+</pre>
+
+<p> See the <a href=https://dapp.readthedocs.io>user manual</a> or join
+<a href=https://dapphub.chat>DappHub.chat</a> for more information.
