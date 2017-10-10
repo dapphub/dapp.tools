@@ -11,15 +11,15 @@ developer tools currently recommended by DappHub:
 <b># Install the <a href=https://nixos.org>Nix package manager</a>:</b>
 curl https://nixos.org/nix/install | sh
 <b># Add the <!--
---><a href=https://github.com/dapphub/nixpkgs>DappHub channel</a> to Nix (optional):</b>
+--><a href=https://github.com/dapphub/nixpkgs>DappHub channel</a> to Nix:</b>
 nix-channel --add https://nix.dapphub.com/pkgs/dapphub
 nix-channel --update
 <b># Install the various developer tools:</b>
-nix-env -i <!--
---><a href=https://github.com/dapphub/dapp>dapp</a> <!--
---><a href=https://github.com/dapphub/hsevm>hsevm</a> <!--
---><a href=https://github.com/dapphub/seth>seth</a> <!--
---><a href=https://github.com/ethereum/solidity>solc</a>
+nix-env -iA dapphub.{<!--
+--><a href=https://github.com/dapphub/dapp>dapp</a>,<!--
+--><a href=https://github.com/dapphub/hsevm>hsevm</a>,<!--
+--><a href=https://github.com/dapphub/seth>seth</a>,<!--
+--><a href=https://github.com/ethereum/solidity>solc</a>}
 </pre>
 
 <p> See the <a href=https://dapp.readthedocs.io>user manual</a> or join
